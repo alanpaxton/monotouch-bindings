@@ -38,8 +38,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Resources\FacebookSDKResources.bundle\" />
     <Folder Include="Resources\FBUserSettingsViewResources.bundle\" />
+    <Folder Include="Resources\FacebookSDKResources.bundle\" />
   </ItemGroup>
   <ItemGroup>
     <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
@@ -50,14 +50,32 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Xamarin.ObjcBinding.CSharp.targets" />
   <ItemGroup>
     <ObjcBindingNativeLibrary Include="libFacebookSDK.a" />
+    <ObjcBindingNativeLibrary Include="libarclite.a" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="libFacebookSDK.linkwith.cs">
       <DependentUpon>libFacebookSDK.a</DependentUpon>
     </Compile>
     <Compile Include="extensions.cs" />
+    <Compile Include="libarclite.linkwith.cs">
+      <DependentUpon>libarclite.a</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\Contents\Resources\en.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\Contents\Resources\he.lproj\Localizable.strings" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\facebook-logo.png" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\facebook-logo%402x.png" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPadLandscape.jpg" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPadLandscape%402x.jpg" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPadPortrait.jpg" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPadPortrait%402x.jpg" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPhonePortrait.jpg" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPhonePortrait%402x.jpg" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\silver-button-normal.png" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\silver-button-normal%402x.png" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\silver-button-pressed.png" />
+    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\silver-button-pressed%402x.png" />
     <BundleResource Include="Resources\FacebookSDKResources.bundle\Contents\Resources\en.lproj\Localizable.strings" />
     <BundleResource Include="Resources\FacebookSDKResources.bundle\Contents\Resources\he.lproj\Localizable.strings" />
     <BundleResource Include="Resources\FacebookSDKResources.bundle\FBDialog\images\close.png" />
@@ -74,19 +92,5 @@
     <BundleResource Include="Resources\FacebookSDKResources.bundle\FBPlacePickerView\images\fb_generic_place.png" />
     <BundleResource Include="Resources\FacebookSDKResources.bundle\FBProfilePictureView\images\fb_blank_profile_portrait.png" />
     <BundleResource Include="Resources\FacebookSDKResources.bundle\FBProfilePictureView\images\fb_blank_profile_square.png" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\Contents\Resources\en.lproj\Localizable.strings" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\Contents\Resources\he.lproj\Localizable.strings" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\facebook-logo.png" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\facebook-logo%402x.png" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPadLandscape.jpg" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPadLandscape%402x.jpg" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPadPortrait.jpg" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPadPortrait%402x.jpg" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPhonePortrait.jpg" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\loginBackgroundIPhonePortrait%402x.jpg" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\silver-button-normal.png" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\silver-button-normal%402x.png" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\silver-button-pressed.png" />
-    <BundleResource Include="Resources\FBUserSettingsViewResources.bundle\images\silver-button-pressed%402x.png" />
   </ItemGroup>
 </Project>
