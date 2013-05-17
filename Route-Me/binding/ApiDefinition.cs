@@ -990,6 +990,10 @@ namespace RouteMe
 	interface RMOpenStreetMapSource {
 	}
 
+	[BaseType (typeof (RMAbstractWebMapSource))]
+	interface RMOpenCycleMapSource {
+	}
+
 	#endregion
 
 	#endregion
