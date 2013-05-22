@@ -1294,6 +1294,16 @@ namespace RouteMe
 		void ClosePath ();
 	}
 
+	[Static]
+	interface LineJoinStyle {
+		[Field ("kCALineJoinRound", "__Internal")]
+		NSString Round { get; }
+		[Field ("kCALineJoinMiter", "__Internal")]
+		NSString Miter { get; }
+		[Field ("kCALineJoinBevel", "__Internal")]
+		NSString Bevel { get; }
+	}
+
 	[BaseType (typeof (RMMapLayer))]
 	interface RMShape {
 
