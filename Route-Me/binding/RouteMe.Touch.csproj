@@ -43,11 +43,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Xamarin.ObjcBinding.CSharp.targets" />
   <ItemGroup>
-    <ObjcBindingNativeLibrary Include="libMapView.a" />
+    <ObjcBindingNativeLibrary Include="libMapBox.a" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="libMapView.linkwith.cs">
-      <DependentUpon>libMapView.a</DependentUpon>
+    <Compile Include="libMapBox.linkwith.cs">
+      <DependentUpon>libMapBox.a</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
