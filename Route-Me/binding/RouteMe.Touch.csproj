@@ -51,23 +51,27 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\MapBox.bundle\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Images\HeadingAngleSmall.png" />
-    <EmbeddedResource Include="Images\HeadingAngleSmall%402x.png" />
-    <EmbeddedResource Include="Images\TrackingDot.png" />
-    <EmbeddedResource Include="Images\TrackingDot%402x.png" />
-    <EmbeddedResource Include="Images\TrackingDotHalo.png" />
-    <EmbeddedResource Include="Images\TrackingDotHalo%402x.png" />
-    <EmbeddedResource Include="Images\TrackingHeading.png" />
-    <EmbeddedResource Include="Images\TrackingHeading%402x.png" />
-    <EmbeddedResource Include="Images\TrackingLocation.png" />
-    <EmbeddedResource Include="Images\TrackingLocation%402x.png" />
-    <EmbeddedResource Include="Images\loading.png" />
-    <EmbeddedResource Include="Images\marker-blue-withletter.png" />
-    <EmbeddedResource Include="Images\marker-blue.png" />
-    <EmbeddedResource Include="Images\marker-red-withletter.png" />
-    <EmbeddedResource Include="Images\marker-red.png" />
+    <BundleResource Include="Resources\MapBox.bundle\HeadingAngleLarge.png" />
+    <BundleResource Include="Resources\MapBox.bundle\HeadingAngleLarge%402x.png" />
+    <BundleResource Include="Resources\MapBox.bundle\HeadingAngleMedium.png" />
+    <BundleResource Include="Resources\MapBox.bundle\HeadingAngleMedium%402x.png" />
+    <BundleResource Include="Resources\MapBox.bundle\HeadingAngleSmall.png" />
+    <BundleResource Include="Resources\MapBox.bundle\HeadingAngleSmall%402x.png" />
+    <BundleResource Include="Resources\MapBox.bundle\LoadingTile.png" />
+    <BundleResource Include="Resources\MapBox.bundle\LoadingTileZoom.png" />
+    <BundleResource Include="Resources\MapBox.bundle\TrackingDot.png" />
+    <BundleResource Include="Resources\MapBox.bundle\TrackingDot%402x.png" />
+    <BundleResource Include="Resources\MapBox.bundle\TrackingDotHalo.png" />
+    <BundleResource Include="Resources\MapBox.bundle\TrackingDotHalo%402x.png" />
+    <BundleResource Include="Resources\MapBox.bundle\TrackingHeading.png" />
+    <BundleResource Include="Resources\MapBox.bundle\TrackingHeading%402x.png" />
+    <BundleResource Include="Resources\MapBox.bundle\TrackingLocation.png" />
+    <BundleResource Include="Resources\MapBox.bundle\TrackingLocation%402x.png" />
+    <BundleResource Include="Resources\MapBox.bundle\mapbox.png" />
+    <BundleResource Include="Resources\MapBox.bundle\mapbox%402x.png" />
   </ItemGroup>
 </Project>
